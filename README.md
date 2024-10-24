@@ -149,3 +149,8 @@ Repita lo mismo con estos datos (modelo Actor)
 | -------- | ---------- | --------- |
 | 1        | PENELOPE   | GUINESS   |
 | 10       | CHRISTIAN  | GABLE     |
+
+# Ejercicio 3
+
+Muestre los dos listados anteriores usando un ciclo foreach
+

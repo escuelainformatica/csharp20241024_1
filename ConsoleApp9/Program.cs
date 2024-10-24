@@ -18,6 +18,7 @@ namespace ConsoleApp9
             paises[1] = "Argentina";
             paises[2] = "Peru";
             string[] paises2 = new string[] { "Chile", "Argentina", "Peru" };
+            
             // Stack
             // Queue
             // Dictionary
@@ -42,14 +43,38 @@ namespace ConsoleApp9
             productos.Add(new Producto("fanta", 500));
             productos.Add(new Producto { Nombre = "sprite", Precio = 2000 });
 
+            // listado de clientes
+            var clientes = new List<Cliente>();
+            var texto = "hola";
+
+            clientes.Add(new Cliente("John", "Doe", 22));
+            clientes.Add(new Cliente("Anna", "Smith", 33));
+            clientes.Add(new Cliente("Peter", "R", 22));
+            clientes.Add(new Cliente("Susan", "T", 22));
+
+
+            // ciclo:
+            Console.WriteLine("for:");
+            for(int i=0;i<clientes.Count;i++)
+            {
+                Console.WriteLine($"{clientes[i].Nombre} {clientes[i].Apellido} {clientes[i].Edad} ");
+            }
+            // ciclo for each
+            Console.WriteLine("for each:");
+            foreach (var cliente in clientes) // recorra todos los clientes que esta EN el listado clientes
+            {
+                Console.WriteLine($"{cliente.Nombre} {cliente.Apellido} {cliente.Edad} ");
+            }
+            Console.WriteLine("for each marcas:");
+            var marcas = new List<string>() { "Samsung", "Apple", "Microsoft","Xiaomi","Huaweii" };
+            foreach(var marca in marcas)
+            {
+                Console.WriteLine(marca);
+            }
 
 
 
-
-
-
-
-
+            Console.ReadKey();
         }
     }
 }
