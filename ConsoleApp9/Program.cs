@@ -11,6 +11,7 @@ namespace ConsoleApp9
     {
         static void Main(string[] args)
         {
+        
             // los arreglos son finitos, no se puede aumentar o disminuir su tamaño.
             string[] paises = new string[3]; // un arreglo de 3 elementos.
             paises[0] = "Chile";
