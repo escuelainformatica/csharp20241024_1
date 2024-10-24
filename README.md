@@ -154,3 +154,12 @@ Repita lo mismo con estos datos (modelo Actor)
 
 Muestre los dos listados anteriores usando un ciclo foreach
 
+Ejemplo
+
+```c#
+foreach (var cliente in clientes) // recorra todos los clientes que esta EN el listado clientes
+{
+    Console.WriteLine($"{cliente.Nombre} {cliente.Apellido} {cliente.Edad} ");
+}
+```
+
